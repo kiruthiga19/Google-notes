@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="menubar">
+        <input type="checkbox" id="check">
+        <div id="checkbtn">
+          <div class="menu-bar">
+            <i class="fas fa-bars" id="btn"></i>
+            <span class="menubar1">Main menu</span>
+          </div>
+            <div class="firsticon">
+            <img src="./icon img.png" id="logoimg">
+            <span class="tooltiptext">Keep</span>
+            <h2>Keep</h2>
+           </div>
+        </div>
+        </div>
+     <div class="search-container">
+              <form>
+                <input type="text" placeholder="Search.."id="firsttext" >
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+            <div id="icons-text">
+    
+       
+                <button id="text"> <i class='far fa-lightbulb' style='font-size:24px'></i>Notes</button><br>
+                
+                <button id="text"><i class="fa fa-bell-o"style='font-size:20px'></i>Reminders</button><br>
+                
+                <button id="text"><i class='fas fa-pen' style='font-size:20px'></i>Edit labels</button><br>
+              
+                <button id="text"> <i class="material-icons">archive</i>Archive</button><br>
+                
+                <button id="text"><i class="material-icons">delete</i>Bin</button><br>
+                </div>
+                                           <!-- drop down -->
+  <div class="modal">
+    <div class="modal-content">
+      <input class="modal-title" placeholder="Title" type="text">
+      <input class="modal-text" placeholder="Take a note..." type="text">
+      <span class="modal-close-button">Close</span>
+    </div>
+  </div>
+  <main>
+    <header>
+      <!-- <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png">
+      <h2 class="header-title">Keep</h2> -->
+    </header>
+    <div id="form-container">
+      <form id="form" autocomplete="off">
+        <input id="note-title" placeholder="Title" type="text">
+        <input id="note-text" placeholder="Take a note..." type="text">
+        <div id="form-buttons">
+          <button type="submit" id="submit-button">Submit</button>
+          <button type="button" id="form-close-button">Close</button>
+        </div>
+      </form>
+    </div>
+    <div id="notes"></div>
+    <div id="placeholder">
+      <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline">
+      <p id="placeholder-text">Notes you add appear here</p>
+    </div>
+    <div id="color-tooltip">
+      <div class="color-option" data-color="#fff" id="white"></div>
+      <div class="color-option" data-color="#d7aefb" id="purple"></div>
+      <div class="color-option" data-color="#fbbc04" id="orange"></div>
+      <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+    </div>
+  </main>
+<!-- https://google.com/keep -->
+                    <script src="app.js"></script>
+    </body>
+</html>
