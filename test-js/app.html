@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Google notes</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<body>
+  <div class="header">
+    <div class="menubar">
+        <input type="checkbox" id="check">
+        <div id="checkbtn">
+          <div class="menu-bar">
+            <i class="fas fa-bars" id="btn"></i>
+            <span class="menubar1">Main menu</span>
+          </div>
+            <div class="firsticon">
+            <img src="../icon img.png" id="logoimg">
+            <span class="tooltiptext">Keep</span>
+            <h2>Keep</h2>
+           </div>
+        </div>
+        </div>
+        
+     <div class="search-container">
+              <form>
+                <input type="text" placeholder="Search.."id="firsttext" >
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <i class="material-icons fa-1x" id="refresh" >refresh</i>
+        </div>
+        <img src="./pause-button.png" id="pause">
+        <img src="./settings.png" id="pause1">
+        <img src="./application.png" id="pause2">
+      <img src="./icon.jpg"id="icon">
+          </div>
+            <hr>
+            <div id="icons-text">
+    
+       
+                <button id="text" onclick="red()"> <i class='far fa-lightbulb' style='font-size:24px'></i>Notes</button><br>
+                
+                <button id="text1" onclick="blue()"><i class="fa fa-bell-o"style='font-size:20px'></i>Reminders</button><br>
+                
+                <button id="text"><i class='fas fa-pen' style='font-size:20px'></i>Edit labels</button><br>
+              
+                <button id="text"> <i class="material-icons">archive</i>Archive</button><br>
+                
+                <button id="text"><i class="material-icons">delete</i>Bin</button><br>
+                </div>
+                <!--   modal start -->
+  <div class="popup-box">
+    <div class="popup">
+      <div class="content">
+        <header>
+        <!-- <p>add a new note</p> -->
+        <p></p>
+        <i class="uil uil-times"></i>
+      </header>
+      <form action="#">
+        <div class="row title">
+          <!-- <label>title</label> -->
+          <input type="text" placeholder="Title">
+        </div>
+        <div class="row description">
+          <!-- <label>description</label> -->
+          <input type="text"placeholder="Take a note" class="des">
+        </div>
+        <button>add note</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <li class="add-box">
+      <div class="icon">
+        <form>
+          <input type="text" placeholder="Take a note" id="notes-first-click">
+        </form>
+      </i></div>
+    </li>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
